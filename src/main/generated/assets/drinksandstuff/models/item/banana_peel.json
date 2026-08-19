@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "drinksandstuff:item/banana_peel"
+  }
+}

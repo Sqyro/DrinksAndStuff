@@ -1,5 +1,7 @@
 package com.sqyro;
 
+import com.sqyro.item.DrinksAndStuffCreativeModeTab;
+import com.sqyro.item.DrinksAndStuffItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -14,6 +16,9 @@ public class DrinksAndStuff implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		DrinksAndStuffItems.register();
+		DrinksAndStuffCreativeModeTab.register();
 
 		LOGGER.info("Hello Fabric world!");
 	}

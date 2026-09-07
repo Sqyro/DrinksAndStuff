@@ -1,5 +1,6 @@
 package com.sqyro;
 
+import com.sqyro.block.DrinksAndStuffBlocks;
 import com.sqyro.entity.DrinksAndStuffEntities;
 import com.sqyro.item.DrinksAndStuffCreativeModeTab;
 import com.sqyro.item.DrinksAndStuffItems;
@@ -16,6 +17,7 @@ public class DrinksAndStuff implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		DrinksAndStuffItems.register();
+		DrinksAndStuffBlocks.register();
 		DrinksAndStuffCreativeModeTab.register();
 
 		DrinksAndStuffEntities.register();

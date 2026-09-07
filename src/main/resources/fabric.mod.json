@@ -18,6 +18,9 @@
 		"main": [
 			"com.sqyro.DrinksAndStuff"
 		],
+		"client": [
+			"com.sqyro.DrinksAndStuffClient"
+		],
 		"fabric-datagen": [
 			"com.sqyro.DrinksAndStuffDataGenerator"
 		]

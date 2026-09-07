@@ -15,7 +15,7 @@ public class DrinksAndStuffItems {
             setting -> new Item(setting.food(DrinksAndStuffConsumables.PEELED_BANANA)));
 
     public static final Item BANANA_PEEL = registerItem("banana_peel",
-            setting -> new Item(setting));
+            setting -> new BananaPeelItem(setting));
 
     public static final Item BANANA = registerItem("banana", setting -> new PeelableItem(PEELED_BANANA, BANANA_PEEL, setting));
 

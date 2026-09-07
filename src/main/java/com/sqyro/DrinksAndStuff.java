@@ -1,10 +1,9 @@
 package com.sqyro;
 
+import com.sqyro.entity.DrinksAndStuffEntities;
 import com.sqyro.item.DrinksAndStuffCreativeModeTab;
 import com.sqyro.item.DrinksAndStuffItems;
 import net.fabricmc.api.ModInitializer;
-
-import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,14 +15,11 @@ public class DrinksAndStuff implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		DrinksAndStuffItems.register();
 		DrinksAndStuffCreativeModeTab.register();
 
-		LOGGER.info("Hello Fabric world!");
-	}
+		DrinksAndStuffEntities.register();
 
-	public static Identifier id(String path) {
-		return Identifier.of(MOD_ID, path);
+		LOGGER.info("Hello Fabric world!");
 	}
 }

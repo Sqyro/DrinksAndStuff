@@ -14,7 +14,8 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class DrinksAndStuffBlocks {
-
+    public static final Block RECEPTION_BELL = registerBlock("reception_bell",
+            properties -> new ReceptionBellBlock(properties.strength(4f)));
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(DrinksAndStuff.MOD_ID, name))));
@@ -27,7 +28,6 @@ public class DrinksAndStuffBlocks {
                 new BlockItem(block, new Item.Settings().useBlockPrefixedTranslationKey()
                         .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(DrinksAndStuff.MOD_ID, name)))));
     }
-
 
     public static void register() {}
 }

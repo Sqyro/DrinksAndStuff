@@ -1,6 +1,7 @@
 package com.sqyro.item;
 
 import com.sqyro.DrinksAndStuff;
+import com.sqyro.block.DrinksAndStuffBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -15,6 +16,7 @@ public class DrinksAndStuffCreativeModeTab {
             FabricItemGroup.builder().icon(() -> new ItemStack(DrinksAndStuffItems.BANANA_PEEL))
                     .displayName(Text.translatable("itemgroup.drinksandstuff.drinks_and_stuff_tab"))
                     .entries((displayContext, entries) -> {
+                        entries.add(DrinksAndStuffBlocks.RECEPTION_BELL);
                         entries.add(DrinksAndStuffItems.BANANA);
                         entries.add(DrinksAndStuffItems.PEELED_BANANA);
                         entries.add(DrinksAndStuffItems.BANANA_PEEL);

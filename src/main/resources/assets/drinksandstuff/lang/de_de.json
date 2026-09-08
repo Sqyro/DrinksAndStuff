@@ -1,5 +1,9 @@
 {
-  "itemgroup.drinksandstuff.drinks_and_stuff_tab": "Drinks and Stuff"
+  "itemgroup.drinksandstuff.drinks_and_stuff_tab": "Drinks and Stuff",
 
+  "item.drinksandstuff.banana": "Banane",
+  "item.drinksandstuff.peeled_banana": "Geschälte Banane",
+  "item.drinksandstuff.banana_peel": "Bananenschale",
 
+  "block.drinksandstuff.reception_bell": "Tischklingel"
 }

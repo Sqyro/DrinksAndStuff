@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": "minecraft:stone_button",
+    "G": "minecraft:gold_ingot",
+    "N": "minecraft:note_block",
+    "S": "#minecraft:wooden_slabs"
+  },
+  "pattern": [
+    " B ",
+    "GNG",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "drinksandstuff:reception_bell"
+  }
+}

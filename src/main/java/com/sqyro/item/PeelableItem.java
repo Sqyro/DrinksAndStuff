@@ -4,6 +4,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -13,10 +14,13 @@ public class PeelableItem extends Item {
     private final Item peeledItem;
     private final Item peel;
 
-    public PeelableItem(Item peeledItem, Item peel, Settings settings) {
+    private final SoundEvent peelingSound;
+
+    public PeelableItem(Item peeledItem, Item peel, SoundEvent peelingSound, Settings settings) {
         super(settings);
         this.peeledItem = peeledItem;
         this.peel = peel;
+        this.peelingSound = peelingSound;
     }
 
     @Override
@@ -27,7 +31,7 @@ public class PeelableItem extends Item {
             return ActionResult.SUCCESS;
         }
 
-        world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_BUNDLE_INSERT, SoundCategory.PLAYERS);
+        world.playSound(null, player.getX(), player.getY(), player.getZ(), peelingSound, SoundCategory.PLAYERS);
 
         if (stack.getCount() > 1) {
             player.giveOrDropStack(new ItemStack(peeledItem));

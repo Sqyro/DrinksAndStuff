@@ -8,5 +8,7 @@
   "item.drinksandstuff.peeled_lemon": "Peeled Lemon",
   "item.drinksandstuff.lemon_peel": "Lemon Peel",
 
-  "block.drinksandstuff.reception_bell": "Reception Bell"
+  "block.drinksandstuff.reception_bell": "Reception Bell",
+
+  "death.attack.drinksandstuff.sour": "%1$s got too sour"
 }

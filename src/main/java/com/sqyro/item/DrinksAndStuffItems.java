@@ -12,13 +12,13 @@ import java.util.function.Function;
 
 public class DrinksAndStuffItems {
     public static final Item PEELED_LEMON = registerItem("peeled_lemon",
-            setting -> new Item(setting.food(DrinksAndStuffConsumables.PEELED_LEMON)));
+            setting -> new Item(setting.food(DrinksAndStuffConsumables.PEELED_LEMON_FOOD, DrinksAndStuffConsumables.PEELED_LEMON)));
     public static final Item LEMON_PEEL = registerItem("lemon_peel",
             setting -> new Item(setting));
     public static final Item LEMON = registerItem("lemon", setting -> new PeelableItem(PEELED_LEMON, LEMON_PEEL, setting));
 
     public static final Item PEELED_BANANA = registerItem("peeled_banana",
-            setting -> new Item(setting.food(DrinksAndStuffConsumables.PEELED_BANANA)));
+            setting -> new Item(setting.food(DrinksAndStuffConsumables.PEELED_BANANA_FOOD)));
     public static final Item BANANA_PEEL = registerItem("banana_peel",
             setting -> new BananaPeelItem(setting));
     public static final Item BANANA = registerItem("banana", setting -> new PeelableItem(PEELED_BANANA, BANANA_PEEL, setting));

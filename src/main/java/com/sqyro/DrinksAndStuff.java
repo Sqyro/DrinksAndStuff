@@ -1,6 +1,8 @@
 package com.sqyro;
 
 import com.sqyro.block.DrinksAndStuffBlocks;
+import com.sqyro.damage.DrinksAndStuffDamageTypes;
+import com.sqyro.effect.DrinksAndStuffEffects;
 import com.sqyro.entity.DrinksAndStuffEntities;
 import com.sqyro.item.DrinksAndStuffCreativeModeTab;
 import com.sqyro.item.DrinksAndStuffItems;
@@ -19,6 +21,9 @@ public class DrinksAndStuff implements ModInitializer {
 		DrinksAndStuffItems.register();
 		DrinksAndStuffBlocks.register();
 		DrinksAndStuffCreativeModeTab.register();
+
+		DrinksAndStuffEffects.register();
+		DrinksAndStuffDamageTypes.register();
 
 		DrinksAndStuffEntities.register();
 

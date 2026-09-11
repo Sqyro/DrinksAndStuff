@@ -4,6 +4,9 @@
   "item.drinksandstuff.banana": "Banane",
   "item.drinksandstuff.peeled_banana": "Geschälte Banane",
   "item.drinksandstuff.banana_peel": "Bananenschale",
+  "item.drinksandstuff.lemon": "Zitrone",
+  "item.drinksandstuff.peeled_lemon": "Geschälte Zitrone",
+  "item.drinksandstuff.lemon_peel": "Zitronenschale",
 
   "block.drinksandstuff.reception_bell": "Tischklingel"
 }

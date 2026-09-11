@@ -17,6 +17,9 @@ public class DrinksAndStuffCreativeModeTab {
                     .displayName(Text.translatable("itemgroup.drinksandstuff.drinks_and_stuff_tab"))
                     .entries((displayContext, entries) -> {
                         entries.add(DrinksAndStuffBlocks.RECEPTION_BELL);
+                        entries.add(DrinksAndStuffItems.LEMON);
+                        entries.add(DrinksAndStuffItems.PEELED_LEMON);
+                        entries.add(DrinksAndStuffItems.LEMON_PEEL);
                         entries.add(DrinksAndStuffItems.BANANA);
                         entries.add(DrinksAndStuffItems.PEELED_BANANA);
                         entries.add(DrinksAndStuffItems.BANANA_PEEL);

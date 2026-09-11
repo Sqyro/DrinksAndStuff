@@ -19,6 +19,9 @@ public class DrinksAndStuffModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(DrinksAndStuffItems.LEMON, Models.GENERATED);
+        itemModelGenerator.register(DrinksAndStuffItems.PEELED_LEMON, Models.GENERATED);
+        itemModelGenerator.register(DrinksAndStuffItems.LEMON_PEEL, Models.GENERATED);
         itemModelGenerator.register(DrinksAndStuffItems.BANANA, Models.GENERATED);
         itemModelGenerator.register(DrinksAndStuffItems.PEELED_BANANA, Models.GENERATED);
         itemModelGenerator.register(DrinksAndStuffItems.BANANA_PEEL, Models.GENERATED);

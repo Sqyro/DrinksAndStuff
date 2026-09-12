@@ -1,5 +1,6 @@
 package com.sqyro.effect;
 
+import com.sqyro.DrinksAndStuff;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.registry.Registries;
@@ -11,7 +12,7 @@ public class DrinksAndStuffEffects {
     public static final RegistryEntry<StatusEffect> SOUR = register("sour", new SourStatusEffect(StatusEffectCategory.HARMFUL, 15280531));
 
     private static RegistryEntry<StatusEffect> register(String id, StatusEffect statusEffect) {
-        return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.ofVanilla(id), statusEffect);
+        return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(DrinksAndStuff.MOD_ID, id), statusEffect);
     }
 
     public static void register() {}

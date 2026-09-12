@@ -1,5 +1,6 @@
 package com.sqyro.effect;
 
+import com.sqyro.DrinksAndStuff;
 import com.sqyro.damage.DrinksAndStuffDamageSources;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
@@ -12,6 +13,8 @@ public class SourStatusEffect extends StatusEffect {
     }
 
     public void onApplied(LivingEntity entity, int amplifier) {
-        entity.damage((ServerWorld) entity.getEntityWorld(), DrinksAndStuffDamageSources.get(entity.getEntityWorld()).sour, amplifier + 5);
+        DrinksAndStuffDamageSources damageSources = new DrinksAndStuffDamageSources(entity.getEntityWorld().getRegistryManager());
+        entity.damage((ServerWorld) entity.getEntityWorld(), damageSources.sour(), (amplifier+1) *2);
+        DrinksAndStuff.LOGGER.info("Damaged");
     }
 }

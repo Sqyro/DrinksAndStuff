@@ -16,13 +16,18 @@ public class DrinksAndStuffItems {
             setting -> new Item(setting.food(DrinksAndStuffConsumables.PEELED_LEMON_FOOD, DrinksAndStuffConsumables.PEELED_LEMON)));
     public static final Item LEMON_PEEL = registerItem("lemon_peel",
             setting -> new Item(setting));
-    public static final Item LEMON = registerItem("lemon", setting -> new PeelableItem(PEELED_LEMON, LEMON_PEEL, SoundEvents.ITEM_BUNDLE_INSERT, setting));
+    public static final Item LEMON = registerItem("lemon",
+            setting -> new PeelableItem(PEELED_LEMON, LEMON_PEEL, SoundEvents.ITEM_BUNDLE_INSERT, setting));
 
     public static final Item PEELED_BANANA = registerItem("peeled_banana",
             setting -> new Item(setting.food(DrinksAndStuffConsumables.PEELED_BANANA_FOOD)));
     public static final Item BANANA_PEEL = registerItem("banana_peel",
             setting -> new BananaPeelItem(setting));
-    public static final Item BANANA = registerItem("banana", setting -> new PeelableItem(PEELED_BANANA, BANANA_PEEL, SoundEvents.ITEM_BUNDLE_INSERT, setting));
+    public static final Item BANANA = registerItem("banana",
+            setting -> new PeelableItem(PEELED_BANANA, BANANA_PEEL, SoundEvents.ITEM_BUNDLE_INSERT, setting));
+
+    public static final Item CHERRY = registerItem("cherry",
+            setting -> new Item(setting.food(DrinksAndStuffConsumables.CHERRY_FOOD)));
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {
         return Registry.register(Registries.ITEM, Identifier.of(DrinksAndStuff.MOD_ID, name),

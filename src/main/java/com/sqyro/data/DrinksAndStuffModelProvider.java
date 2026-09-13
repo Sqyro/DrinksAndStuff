@@ -25,5 +25,6 @@ public class DrinksAndStuffModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DrinksAndStuffItems.BANANA, Models.GENERATED);
         itemModelGenerator.register(DrinksAndStuffItems.PEELED_BANANA, Models.GENERATED);
         itemModelGenerator.register(DrinksAndStuffItems.BANANA_PEEL, Models.GENERATED);
+        itemModelGenerator.register(DrinksAndStuffItems.CHERRY, Models.GENERATED);
     }
 }

@@ -14,6 +14,8 @@ public class DrinksAndStuffConsumables {
 
     public static final FoodComponent PEELED_BANANA_FOOD = new FoodComponent.Builder().nutrition(2).saturationModifier(0.15f).build();
 
+    public static final FoodComponent CHERRY_FOOD = new FoodComponent.Builder().nutrition(2).saturationModifier(0.15f).build();
+
     public static ConsumableComponent.Builder food() {
         return ConsumableComponent.builder().consumeSeconds(1.6F).useAction(UseAction.EAT).sound(SoundEvents.ENTITY_GENERIC_EAT).consumeParticles(true);
     }

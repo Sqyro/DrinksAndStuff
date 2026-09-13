@@ -23,6 +23,7 @@ public class DrinksAndStuffCreativeModeTab {
                         entries.add(DrinksAndStuffItems.BANANA);
                         entries.add(DrinksAndStuffItems.PEELED_BANANA);
                         entries.add(DrinksAndStuffItems.BANANA_PEEL);
+                        entries.add(DrinksAndStuffItems.CHERRY);
                     }).build());
 
     public static void register() {}

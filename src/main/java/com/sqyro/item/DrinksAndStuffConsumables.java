@@ -14,9 +14,15 @@ public class DrinksAndStuffConsumables {
 
     public static final FoodComponent PEELED_BANANA_FOOD = new FoodComponent.Builder().nutrition(2).saturationModifier(0.15f).build();
 
-    public static final FoodComponent CHERRY_FOOD = new FoodComponent.Builder().nutrition(2).saturationModifier(0.15f).build();
+    public static final FoodComponent CHERRY_FOOD = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+
+    public static final ConsumableComponent FAST_FRUIT = fastFood().build();
 
     public static ConsumableComponent.Builder food() {
         return ConsumableComponent.builder().consumeSeconds(1.6F).useAction(UseAction.EAT).sound(SoundEvents.ENTITY_GENERIC_EAT).consumeParticles(true);
+    }
+
+    public static ConsumableComponent.Builder fastFood() {
+        return ConsumableComponent.builder().consumeSeconds(0.4F).useAction(UseAction.EAT).sound(SoundEvents.ENTITY_GENERIC_EAT).consumeParticles(true);
     }
 }

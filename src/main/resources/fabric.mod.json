@@ -3,15 +3,15 @@
 	"id": "drinksandstuff",
 	"version": "${version}",
 	"name": "Drinks and Stuff",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod that adds all sorts of drinks and stuff",
 	"authors": [
-		"Me!"
+		"Sqyro"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "ARR",
 	"icon": "assets/drinksandstuff/icon.png",
 	"environment": "*",
 	"entrypoints": {

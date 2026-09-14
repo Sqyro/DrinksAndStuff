@@ -27,7 +27,7 @@ public class DrinksAndStuffItems {
             setting -> new PeelableItem(PEELED_BANANA, BANANA_PEEL, SoundEvents.ITEM_BUNDLE_INSERT, setting));
 
     public static final Item CHERRY = registerItem("cherry",
-            setting -> new Item(setting.food(DrinksAndStuffConsumables.CHERRY_FOOD)));
+            setting -> new Item(setting.food(DrinksAndStuffConsumables.CHERRY_FOOD, DrinksAndStuffConsumables.FAST_FRUIT)));
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {
         return Registry.register(Registries.ITEM, Identifier.of(DrinksAndStuff.MOD_ID, name),

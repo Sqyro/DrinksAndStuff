@@ -2,6 +2,9 @@
 	"required": true,
 	"package": "com.sqyro.mixin",
 	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"SourEffectJitterMixin"
+	],
 	"mixins": [
 		"ExampleMixin"
 	],

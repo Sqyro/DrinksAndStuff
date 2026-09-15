@@ -11,5 +11,7 @@
 
   "block.drinksandstuff.reception_bell": "Tischklingel",
 
-  "death.attack.sour": "%1$s war zu sauer"
+  "death.attack.sour": "%1$s war zu sauer",
+
+  "effect.drinksandstuff.sour": "Sauer"
 }

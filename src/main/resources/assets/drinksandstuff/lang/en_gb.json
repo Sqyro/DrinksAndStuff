@@ -11,5 +11,7 @@
 
   "block.drinksandstuff.reception_bell": "Reception Bell",
 
-  "death.attack.sour": "%1$s got too sour"
+  "death.attack.sour": "%1$s got too sour",
+
+  "effect.drinksandstuff.sour": "Sour"
 }

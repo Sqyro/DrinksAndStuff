@@ -10,7 +10,7 @@ import net.minecraft.sound.SoundEvents;
 
 public class DrinksAndStuffConsumables {
     public static final FoodComponent PEELED_LEMON_FOOD = new FoodComponent.Builder().nutrition(2).saturationModifier(0.15f).build();
-    public static final ConsumableComponent PEELED_LEMON = food().consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(DrinksAndStuffEffects.SOUR, 40, 0), 0.7F)).build();
+    public static final ConsumableComponent PEELED_LEMON = food().consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(DrinksAndStuffEffects.SOUR, 30, 0), 0.7F)).build();
 
     public static final FoodComponent PEELED_BANANA_FOOD = new FoodComponent.Builder().nutrition(2).saturationModifier(0.15f).build();
 

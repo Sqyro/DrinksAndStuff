@@ -25,8 +25,8 @@ public class SourEffectJitterMixin {
 
         Random random = client.player.getRandom();
 
-        double initialX = random.nextFloat() * 50;
-        double initialY = random.nextFloat() * 50;
+        double initialX = random.nextFloat() * 40 * (client.player.getStatusEffect(DrinksAndStuffEffects.SOUR).getAmplifier()+1);
+        double initialY = random.nextFloat() * 40 * (client.player.getStatusEffect(DrinksAndStuffEffects.SOUR).getAmplifier()+1);
 
         double finalX = random.nextBoolean() ? initialX : -initialX;
         double finalY = random.nextBoolean() ? initialY : -initialY;
